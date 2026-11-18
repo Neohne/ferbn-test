@@ -1,0 +1,424 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+header {
+    background-color: #142b4d;
+    padding: 10px 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* NAVIGATION LINKS */
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.container-nav li {
+    position: relative;
+}
+
+.container-nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container-nav a:hover {
+    background-color: #f0a12d;
+    color: #142b4d;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-services {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 170px;
+    background-color: #1d4778;
+    z-index: 10;
+}
+
+.dropdown-services a {
+    padding: 15px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-services {
+    display: block;
+}
+
+.dropdown:focus-within .dropdown-services {
+    display: block;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 440px;
+    background: linear-gradient(
+        135deg,
+        #e99b32,
+        #f8bd62
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #142b4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: crosshair;
+}
+
+.button:hover {
+    background-color: #294e79;
+}
+
+
+/*Service-section*/
+.service-section {
+    padding: 80px 10%;
+    padding-top: 50px;
+    padding-bottom: 280px;
+    background-color: white;
+    text-align: center;
+}
+/* ABOUT US */
+
+.about-section {
+    padding: 80px 10%;
+    background-color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+}
+/*Youtube*/
+.youtube-section {
+    padding: 80px 10%;
+    background-color: #c1ccda;
+    text-align: center;
+}
+
+.youtube-section h2 {
+    margin-bottom: 20px;
+}
+/*GMAPS*/
+.gmaps-section {
+    padding: 80px 10%;
+    background-color: #e5ebf2;
+    text-align: center;
+}
+
+.gmaps-section h2 {
+    margin-bottom: 20px;
+}
+/* FORMS */
+
+.form-section {
+    padding: 70px 20px;
+}
+
+.form-section form {
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 8px;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+/* FORM BUTTONS */
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.form-buttons input {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #18395f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons input:hover {
+    background-color: #18395fc7;
+}
+
+/* SIGN IN AND SIGN UP PAGES */
+
+.account-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.account-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background-color: #18395f;
+    color: white;
+    border-radius: 8px;
+}
+
+.account-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.account-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.account-form input,
+.account-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.account-form input[type="submit"],
+.account-form input[type="reset"] {
+    width: auto;
+    background-color: #f0a12d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+/* SUCCESS PAGE */
+
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 25px;
+    background-color: #142b4d;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #142b4d;
+    color: white;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f0a12d;
+    text-decoration: none;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .container-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .container-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-nav li,
+    .container-nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-services {
+        position: static;
+        width: 100%;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 25px 15px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        padding: 45px 20px;
+    }
+
+    .form-section form,
+    .account-form {
+        padding: 22px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons input {
+        width: 100%;
+    }
+
+}
